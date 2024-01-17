@@ -28,7 +28,7 @@ A dataset contains customer reviews from 24 product categories. Our goal is to p
 + `cd data/` and run `split_xxx.py` to split each benchmark to `train.json, val.json and test.json`
 
 ### prepare pretrained weights for BERT
-+ `mkdir .bert-base-uncased` in the project directory, download `config.json  pytorch_model.bin  tokenizer.json  vocab.txt` from https://huggingface.co/bert-base-uncased/tree/main 
++ `mkdir .bert-base-uncased` in the project directory, download `config.json  pytorch_model.bin  tokenizer.json  vocab.txt` from https://huggingface.co/bert-base-uncased/tree/main to the directory.
 
 ### Prepare label word embedding
 + For benchmark: FewRel, `data/FewRel/P-info.json` provides for each relation, a list of alias, serving as candidate words. you need to obtain this file from https://github.com/thunlp/MIML/tree/main/data
@@ -43,7 +43,7 @@ A dataset contains customer reviews from 24 product categories. Our goal is to p
 + change line No. 77 and No. 82 in model.py according to the comments
 + change line No. 33 and No. 36 in main.py according to the comments
 + `cd data/` and run `word2llm-ebd.py` to prepare the LLM word embeddings of each class 
-+ `mkdir llama-2-7b-hf` in the project directory, download `config.json generation_config.json pytorch_model-00001-of-00002.bin pytorch_model-00002-of-00002.bin pytorch_model.bin.index.json special_tokens_map.json tokenizer_config.json tokenizer.json tokenizer.model` from https://huggingface.co/meta-llama/Llama-2-7b-hf/tree/main
++ `mkdir llama-2-7b-hf` in the project directory, download `config.json generation_config.json pytorch_model-00001-of-00002.bin pytorch_model-00002-of-00002.bin pytorch_model.bin.index.json special_tokens_map.json tokenizer_config.json tokenizer.json tokenizer.model` from https://huggingface.co/meta-llama/Llama-2-7b-hf/tree/main to the directory.
 
 # Requirements
 + Pytorch>=0.4.1
