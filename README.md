@@ -53,3 +53,14 @@ A dataset contains customer reviews from 24 product categories. Our goal is to p
 + json
 + apex (https://github.com/NVIDIA/apex)
 + peft
+
+# Cite this work
+```
+@article{eptml2024,
+  title={Few-shot Text Classification with An Efficient Prompt Tuning Method in Meta-Learning Framework},
+  author={Xiaobao Lv},
+  journal={International Journal of Pattern Recognition and Artificial Intelligence},
+  doi={https://doi.org/10.1142/S0218001424510066}
+  year={2024}
+}
+```
